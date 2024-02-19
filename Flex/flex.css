@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #1c1b21;
+    color: #FAFAFA;
+    font-size: 55px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+.container {
+    border: 10px solid #6c38cc;
+    display: flex;
+    /*!*flex-flow: row wrap;*!  direction: + wrap*/
+    /*!*flex-direction: row;*! ось*/
+    /*!*flex-wrap: wrap;*! перенос строки контейнера при уменьшении размера*/
+
+    /*!*justify-content: space-between;*! распределение элементов на экране*/
+    /*height: 100vh;*/
+    /*!*align-items: flex-start;*! выравнивает элементы по поперечной оси*/
+    /*align-content: center;*/
+
+    /*gap: 20px; по принципу margin, отступы блоков друг от друга*/
+}
+
+
+.item {
+    background: #232228;
+    border: 1px solid #6c38cc;
+    text-align: center;
+    /*width: calc(100% / 3);*/
+    padding: 10px;
+    /*flex: 1; растянуть до конца экрана*/
+}
+
+/*.item1 {*/
+/*    margin-right: auto;*/
+/*}*/
+
+/*flex: 1 1 300px;*/
+/*!*flex-grow: 1;*! как распределяется пространство между элементами*/
+/*!*flex-shrink: 1;*! как удаляется пространство*/
+/*!*flex-basis: 300px;*! размер доступного пространства элемента*/
+
+/*.item2 {*/
+/*!*    align-self: center;*! выравнивает flex-элементы по текущей flex-линии, */
+/*                            переопределяя значение свойства align-items*/
+/*    flex: 2;*/
+/*}*/
+
+/*.item9 {*/
+/*!*    order: -1;*! определяет порядок, используемый для размещения flex элементов в их flex контейнере
+/*}*/
+
+/*!*По умолчанию order= 0*!*/
+
+/*.item4 {*/
+/*    order: 2;*/
+/*}*/
