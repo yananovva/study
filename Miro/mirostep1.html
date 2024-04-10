@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Miro</title>
     <link rel="stylesheet" href="../Miro/miro.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
 </head>
 <body>
 <header>
@@ -19,51 +24,71 @@
 </header>
 <main>
     <section id="hero">
-        <h1>Место для командной работы</h1>
-        <p class="heroText">Интерактивная онлайн-доска для совместной работы команд -
-            в любое время, в любом месте.</p>
-        <form action="/register" method="get" class="heroForm">
-            <input type="email" name="email" id="email">
-            <button id="heroButton">Начать бесплатно</button>
-        </form>
-        <p>Всегда бесплатно — кредитная карта не нужна</p>
-        <img src="image/headerimage-without-text%201.png" alt="Изображение экрана работы Miro">
+        <div>
+            <h1>Место для<br/>
+                командной<br/>
+                работы</h1>
+            <p class="heroText">Интерактивная онлайн-доска для совместной работы команд -
+                в любое время, в любом месте.</p>
+            <form action="/register" method="get" class="heroForm">
+                <input type="email" name="email" id="email">
+                <button id="heroButton">Начать бесплатно</button>
+            </form>
+            <p>Всегда бесплатно — кредитная карта не нужна</p>
+            <div class="heroLogos">
+                45M+ пользователей
+                <img src="./image/IMAGE.svg" alt="Логотип 1">
+                <img src="./image/IMAGE-1.svg" alt="Логотип 2">
+                <img src="./image/IMAGE-2.svg" alt="Логотип 3">
+                <img src="./image/IMAGE-3.svg" alt="Логотип 4">
+            </div>
+        </div>
+        <div>
+            <img src="image/headerimage-without-text%201.png"
+                 alt="Изображение экрана работы Miro"
+                 id="heroImage"
+            />
+        </div>
     </section>
-    <section>
-        <h2>Работайте вместе, где бы вы не аходились</h2>
-        <p class="sectionText">Работая в офисе, удалённо или в гибридном формате, с Miro ваша команда
-            может общаться, сотрудничать и совместно заниматься творчеством в одном пространстве,
-            из любой точки мира.</p>
-        <a href="#" class="link"
-           target="_blank">Узнать больше</a>
-        <img src="image/IMAGE.png" alt="Работа с Miro с мобильных устройств">
+    <section class="section">
+        <div>
+            <h2>Работайте вместе, где бы вы не находились</h2>
+            <p class="sectionText">Работая в офисе, удалённо или в гибридном формате, с Miro ваша команда
+                может общаться, сотрудничать и совместно заниматься творчеством в одном пространстве,
+                из любой точки мира.</p>
+            <a href="#"
+               class="link"
+               target="_blank">Узнать больше
+            </a>
+        </div>
+        <div>
+            <img src="image/IMAGE.png"
+                 alt="Работа с Miro с мобильных устройств"
+            />
+        </div>
     </section>
-    <section>
-        <img src="image/IMAGE%20(1).png" alt="Сервисы вокруг Miro">
-        <h2>Закройте лишние вкладки - все уже здесь</h2>
-        <p class="sectionText">Редактируете ли вы документы в Google Docs, работаете над задачами в Jira
-            или созваниваетесь в Zoom, Miro предлагает более 100 интеграций с уже известными
-            и полюбившимися вам инструментами.</p>
-        <a href="#" class="link"
-           target="_blank">Узнать больше</a>
-    </section>
-    <section>
-        <h2>Создан для всех типов команд</h2>
-        <ul class="sectionList">
-            <li>Создавайте варфреймы</li>
-            <li>Подключайте заказчиков к процессу дизайна</li>
-            <li>Проводите вовлекающие дизайн-воркшопы</li>
-        </ul>
-        <ul class="sectionList">
-            <li>Создавайте варфреймы</li>
-            <li>Подключайте заказчиков к процессу дизайна</li>
-            <li>Проводите вовлекающие дизайн-воркшопы</li>
-        </ul>
+    <section class="section section-reverse">
+        <div>
+            <h2>Закройте лишние вкладки - все уже здесь</h2>
+            <p class="sectionText">Редактируете ли вы документы в Google Docs, работаете над задачами в Jira
+                или созваниваетесь в Zoom, Miro предлагает более 100 интеграций с уже известными
+                и полюбившимися вам инструментами.
+            </p>
+            <a href="#"
+               class="link"
+               target="_blank">Узнать больше
+            </a>
+        </div>
+        <div>
+            <img src="image/IMAGE%20(1).png"
+                 alt="Сервисы вокруг Miro"
+            />
+        </div>
     </section>
 </main>
 <footer>
-    <div>&copy; Miro</div>
     <div>
+        <div>&copy; Miro</div>
         <a href="#">Условия пользования</a>
         <a href="#">Политика конфидециальности</a>
         <a href="#">Управление файлами cookies</a>
