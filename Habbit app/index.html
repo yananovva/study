@@ -10,7 +10,6 @@
     <link
             href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Reddit+Mono&display=swap"
             rel="stylesheet">
-    <script src="scripts/app.js"></script>
     <link rel="stylesheet" href="styles/main.css"/>
 </head>
 <body>
@@ -18,14 +17,21 @@
     <div class="panel">
         <img class="logo" src="./images/logo.svg" alt="Логотип Habit App"/>
         <nav class="menu">
-            <div class="menu__list"></div>
+            <div class="menu__list">
+                <button class="menu__item menu__item_active">
+                    <img src="./images/sport.svg" alt="Спорт" />
+                </button>
+                <button class="menu__item">
+                    <img src="./images/food.svg" alt="Еда" />
+                </button>
+            </div>
             <button class="menu__add">
                 <img src="./images/add.svg" alt="Добавить привычку" />
             </button>
         </nav>
     </div>
     <div class="content">
-        <header>
+        <header class="header">
             <h1 class="h1">-</h1>
             <div class="progress">
                 <div class="progress__text">
@@ -38,26 +44,18 @@
             </div>
         </header>
         <main>
-            <div>
-                <div class="habit">
-                    <div class="habit__day">День 1</div>
-                    <div class="habit__comment">Первый подход всегда дается тяжело</div>
-                    <button class="habit__delete">
-                        <img src="./images/delete.svg" alt="Удалить день 1"/>
-                    </button>
-                </div>
-            </div>
+            <div id="days"></div>
             <div class="habit">
-                <div class="habit__day">День 2</div>
+                <div class="habit__day">День _</div>
                 <form class="habit__form">
-                    <input class="input_icon" type="text" placeholder="Комментарий" />
-                    <img class="input__icon" src="./images/icon.svg" alt="Иконка комментария" />
+                    <input class="input_icon" type="text" placeholder="Комментарий"/>
+                    <img class="input__icon" src="./images/icon.svg" alt="Иконка комментария"/>
                     <button class="button">Готово</button>
                 </form>
-
             </div>
         </main>
     </div>
 </div>
+<script src="scripts/app.js"></script>
 </body>
 </html>
