@@ -181,3 +181,7 @@ console.log(powerr(2)(5)) // число 5 в степени 2
 // эта же функция в виде стрелочной
 
 const poweer = pow => num => num**pow;
+
+
+
+
