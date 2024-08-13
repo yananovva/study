@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSX Hello World</title>
+</head>
+<body>
+<div id="app"></div>
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js" crossorigin></script>
+<script type="text/babel">
+
+const App = ({initialButtonText, initialClassesList}) => {
+    const [buttonText, setButtonText] = React.useState(initialButtonText);
+    const [classesList, setClassesList] = React.useState(initialClassesList);
+}
+const onButtonClick = () => {
+    setButtonText('Hello from React');
+    setClassesList('green-btn');
+
+return (
+    <div className="app">
+        <button className={classesList} onClick={onButtonClick}>
+            {buttonText}
+        </button>
+    </div>
+)};
+
+    const container = document.getElementById('app');
+    const root = ReactDOM.createRoot(container);
+    root.render(<App initialButtonText= "Click me"
+                     initialClassesList=""/>);
+
+</script>
+</body>
+</html>
